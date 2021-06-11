@@ -9,6 +9,7 @@ const regButton = document.querySelector('.registerBtn');
 regButton.addEventListener('click' , ()=>{
     auth.createUserWithEmailAndPassword(email.value , regIdentif.value).then(
         (data)=>{
+           
             let user = {
                 id: data.user.uid,
                 nombre: nombre.value,
@@ -19,8 +20,10 @@ regButton.addEventListener('click' , ()=>{
             };
 
             db.ref('Profesores/' + user.id).set(user);
+            window.location.href = 'materias.html';
         }
 
+        
     );
 
 });

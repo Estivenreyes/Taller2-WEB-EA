@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\.css"> 
+</head>
+<body>
+    
+    <button class="logOutBtn">Cerrar sesion</button>
+
+    <h1>Agregar materia</h1>
+
+    <p class="nombreProfesor">Profesor...</p>
+
+<form class="materiaForm">
+    <label> Nombre de materia:
+        <input type="text">
+    </label>
+
+    <label> Grupo No:
+        <input type="number">
+    </label>
+    
+</form>
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyAjOnBF_zwAF65ZUkZkHYgckh__wZSiRls",
+        authDomain: "taller2-ea-grupal.firebaseapp.com",
+        databaseURL: "https://taller2-ea-grupal-default-rtdb.firebaseio.com",
+        projectId: "taller2-ea-grupal",
+        storageBucket: "taller2-ea-grupal.appspot.com",
+        messagingSenderId: "198710692839",
+        appId: "1:198710692839:web:12c3e684a23240b115cb42"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="./js/register.js"> </script>
+    <script src="./js/login.js"> </script>
+    <script src="./js/index.js"> </script>
+    </body>
+    </html>
