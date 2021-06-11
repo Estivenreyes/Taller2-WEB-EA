@@ -7,21 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>FeelStudent App</h1>
+    
+    <h1>REGISTRAR</h1>
+
+    <label for=""> Nombre:   
+        <input type="text" class="regName">
+    </label>
+
+    <label for=""> Email: 
+        <input type="email" class="email">
+    </label>
+
+    <label for=""> Materia:   
+        <input type="text" class="materia">
+    </label>
+
+    <label for=""> Grupo: 
+        <input type="number" class="grupo">
+    </label>
+    
+    <label for=""> Identificacion: (contrasena)
+        <input type="password" class="regIdentif">
+    </label>
+
+    <button class="registerBtn">Registrarse</button>
 
 
-    <a href="login.html"> <button class="initialButton"> Ingresar </button> </a>
-    <a href="register.html"> <button class="initialButton"> Registrar</button> </a>
 
-
-
-
-
-
-
-
-
-
+    
 <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase.js"></script>
 <script>
   var firebaseConfig = {
@@ -35,7 +48,8 @@
   };
   firebase.initializeApp(firebaseConfig);
 </script>
-<script src="./js/loginModal.js"> </script>
+<script src="./js/register.js"> </script>
+<script src="./js/login.js"> </script>
 <script src="./js/index.js"> </script>
 </body>
 </html>
